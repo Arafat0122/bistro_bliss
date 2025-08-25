@@ -29,7 +29,7 @@
 <body>
     <header>
         <!-- Sub-Navbar -->
-        <nav class="flex items-center justify-around bg-[#474747] py-2 text-white">
+        <nav class="flex items-center justify-between bg-[#474747] py-2 text-white px-40">
             <section class="flex items-center gap-5">
                 <div class="flex items-center gap-1">
                     <svg class="w-5" xmlns="http://www.w3.org/2000/svg"
@@ -82,14 +82,45 @@
         </nav>
 
         <!-- Main Navbar -->
-        <nav>
+        <nav class="flex items-center justify-between px-40 py-5">
+            <!-- Logo -->
             <section class="flex items-center gap-3">
                 <img src="/japanese-food.png" alt="">
                 <h3 class="text-[43px] text-[#474747] italic playfair-display font-semibold">Bistro Bliss</h3>
             </section>
-            <section></section>
-            <section></section>
+
+            <!-- NavLinks -->
+            <section>
+                <ul class="flex items-center gap-2">
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">Home</li>
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">About</li>
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">Menu</li>
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">Pages</li>
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">Contact</li>
+                </ul>
+            </section>
+
+            <!-- CTA -->
+            <section>
+                <button class="font-bold border-2 py-2 px-7 rounded-full hover:bg-[#DBDFDA]">Book A Table</button>
+            </section>
         </nav>
+
+        <!-- Hero Section -->
+        <section class="bg-[url(/Mask_group.png)] bg-no-repeat bg-center min-h-[802px] flex flex-col items-center justify-center w-screen">
+            <h1 class="text-[95px] m-0 flex flex-col text-center playfair-display">
+                <span class="-my-12">Best food for</span>
+                <span>your taste</span>
+            </h1>
+            <p class="py-12 text-[20px] w-[537px] text-center">
+                Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.
+            </p>
+
+            <section>
+                <button class="font-bold py-5 px-7 rounded-full bg-[#AD343E] hover:bg-[#ADADAD] text-white">Book A Table</button>
+                <button class="font-bold border-2 py-5 px-7 rounded-full hover:bg-[#DBDFDA]">Explore Menu</button>
+            </section>
+        </section>
 
     </header>
     <main>
